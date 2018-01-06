@@ -8,7 +8,7 @@ class SequenceIterator:
         if self._k < len(self._seq):
             return self._seq[self._k]
         else:
-            raise   StopIteration()
+            raise StopIteration()
 
     def __len__(self):
         return len(self._seq)
@@ -36,6 +36,7 @@ if __name__ in '__main__':
     z = SequenceIterator([4,3,2,1])
     q = SequenceIterator([9,8,7,6])
     a=z+q
+    print()
 
     for i in range(len(a)):
         q=next(a)
